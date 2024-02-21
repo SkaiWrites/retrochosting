@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+	"name": "Retrochosting",
+	"version": "1.0",
+
+	"description": "Modifies cohost 'chosts' in-line timestamps and renders them to appear that they've been natively retrodated.'",
+
+	"permissions": [ "activeTab" ],
+
+	"content_scripts": [
+		{
+			"matches": [ "*://*.cohost.org/*" ],
+			"js": [ "retrochosting.js" ]
+		}
+	]
+}
